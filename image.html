@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image of Assignment-4</title>
+    <style>
+        body{
+            background-color: rgb(216, 220, 290);
+        }
+        .container{
+            display: flex;
+            height: 60vh;
+            justify-content: space-between;
+        }
+        .para{
+            flex-basis: 30%;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            padding: 10vh 5vh;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin: 2vh 3vw;
+        }
+        .para:hover{
+            background-color:antiquewhite;
+            color:red;
+            border-radius: 10px;
+        }
+        img{
+            flex-basis: 25%;
+            width: 500px;
+            height: 500;
+        }
+        @media screen and (max-width: 668px) {
+            .container{
+                flex-direction: column;
+            }
+            .container div{
+                width: 80%;
+                margin: 1vh auto;
+            }
+            .para{
+                letter-spacing: normal;
+                word-spacing: normal;
+                padding: 2px auto;
+                font-size: 1.2rem;
+                margin: 0;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+            }
+            img{
+                width: 98%;
+                border-radius: 10px;
+            }
+            .div-1{
+                order: 2;
+            }
+            .div-2{
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <p class="para">The Goldman Sachs Group, Inc. is an American multinational investment bank and financial services company headquartered in New York City. It offers services in investment management, securities, asset management, prime brokerage, and securities underwriting.</p>
+        </div>
+        <div class="div-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3lpAV3sariy8J-tSYCvTHgo_Z0opjyGwJvw&usqp=CAU" alt="Sushant signt Rajput">
+        </div>
+    </div>
+</body>
+</html>
